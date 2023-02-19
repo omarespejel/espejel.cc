@@ -1,5 +1,5 @@
-# 0xjim personal website
+# espejelomar personal website
 
-source for [0xjim.xyz](https://0xjim.xyz)
+source for [espejel.xyz](https://espejel.xyz)
 
 Fork of [transmissions11/transmissions11.github.io](https://github.com/transmissions11/transmissions11.github.io)
