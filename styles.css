@@ -1,6 +1,8 @@
 .title {
   text-align: center;
   margin-bottom: 0.2em;
+  font-family: 'Courier New', monospace;
+  font-size: 2.5rem;
 }
 
 .subtitle {
@@ -8,64 +10,123 @@
   font-size: medium;
   font-weight: bold;
   margin-top: 0;
+  font-family: 'Courier New', monospace;
 }
 
 body {
   line-height: 1.6;
   font-size: 18px;
-  padding: 0 10px;
+  padding: 0 20px;
   margin: 60px auto;
   max-width: 700px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
 }
 
-h2,
-h2,
-h3 {
+h2, h3 {
   line-height: 1.2;
+  font-family: 'Courier New', monospace;
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 5px;
 }
 
 h2 {
   font-style: italic;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-a:link,
-a:visited {
-  color: blue;
+a:link, a:visited {
+  color: #0066cc;
+  text-decoration: none;
+  border-bottom: 1px dotted #0066cc;
+  transition: color 0.2s, border-bottom 0.2s;
 }
 
-.subtitle {
-  text-align: center;
-  font-size: medium;
-  font-weight: bold;
-  margin-top: 0;
-}
-
-body {
-  line-height: 1.6;
-  font-size: 18px;
-  padding: 0 10px;
-  margin: 60px auto;
-  max-width: 700px;
-}
-
-h2,
-h2,
-h3 {
-  line-height: 1.2;
-}
-
-h2 {
-  font-style: italic;
-  font-size: 18px;
-}
-
-a:link,
-a:visited {
-  color: blue;
+a:hover {
+  color: #004499;
+  border-bottom: 1px solid #004499;
 }
 
 .footer {
   text-align: center;
-  margin-bottom: 0.2em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+hr.dotted {
+  border: none;
+  border-top: 2px dotted #ccc;
+  margin: 30px 0;
+}
+
+ul {
+  list-style-type: square;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+img {
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+strong {
+  color: #111;
+  background-color: #efefef;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+
+#preamble {
+  margin-bottom: 40px;
+}
+
+.social-links {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1em;
+  font-family: 'Courier New', monospace;
+}
+
+.social-links a {
+  margin: 0 5px;
+  border-bottom: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+.profile-image {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 0 15px;
+    margin: 30px auto;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
